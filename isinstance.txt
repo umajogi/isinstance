@@ -1,0 +1,16 @@
+#check created object is an instance of the class or not
+#isinstance(obj_name,cls_name)
+class vehicle:
+    def __init__(self,name,max_speed,mileage,capacity):
+        self.name=name
+        self.max_speed=max_speed
+        self.mileage=mileage
+        self.capacity=capacity
+class bus(vehicle):
+    pass
+class car:
+    pass
+class aeroplane(bus):
+    pass
+obj=aeroplane("benz",120,23,12)
+print(isinstance(obj,aeroplane))
